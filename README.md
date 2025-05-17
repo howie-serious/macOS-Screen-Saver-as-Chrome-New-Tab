@@ -17,7 +17,7 @@ Transform your Chrome's new tab page by showcasing macOS's aerial screen saver v
 This Chrome extension delivers the following features:
 
 1. 🎥 Enhance your Chrome start page and new tab view with breathtaking 4K videos, taken directly from macOS' native aerial screen savers.
-2. 🌦️ Receive up-to-the-minute weather updates accompanied by a 3-day forecast.
+2. 🌦 Display current weather and a 3-day forecast.️ Receive up-to-the-minute weather updates accompanied by a 3-day forecast.
 3. 💬 Search everything with Google/ChatGPT/Bing/Duckduckgo.
 4. 🌟 Discover motivational quotes that change randomly with each new tab.
 5. 🔗 Compile your browsing history from the chosen timeframe and offer a quick-access list for your convenience.
