@@ -52,7 +52,9 @@ const defaultQuotes = [
 ];
 
 // 初始化
-document.addEventListener("DOMContentLoaded", initSettings);
+if (typeof document !== "undefined") {
+  document.addEventListener("DOMContentLoaded", initSettings);
+}
 
 // 主程序
 async function initSettings() {
@@ -1059,4 +1061,9 @@ function setupFullScreenListener(videoElement, audioElement) {
   document.addEventListener("mozfullscreenchange", onFullScreenChange);
   document.addEventListener("webkitfullscreenchange", onFullScreenChange);
   document.addEventListener("MSFullscreenChange", onFullScreenChange);
+}
+
+// Export for testing
+if (typeof module !== "undefined" && module.exports) {
+  module.exports.trimTitle = trimTitle;
 }
