@@ -26,7 +26,7 @@ const loadLanguages = async () => {
 
 // const getMsg = chrome.i18n.getMessage;
 const getMsg = (key) => {
-  result = langDict[key]?.message || key;
+  const result = langDict[key]?.message || key;
   return result;
 };
 
