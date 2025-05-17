@@ -708,7 +708,8 @@ async function getCurrentWeather(city, tempUnit, weatherAPIKEY, shouldUpdate) {
       tempUnit === "celsius" ? data.current.temp_c : data.current.temp_f;
     document.getElementById("current-weather").textContent = `${temperature}°`;
     const weatherIcon = document.getElementById("weather-icon");
-    weatherIcon.src = `https://${data.current.condition.icon}`;
+    const iconUrl = data.current.condition.icon;
+    weatherIcon.src = iconUrl.startsWith("http") ? iconUrl : `https:${iconUrl}`;
     weatherIcon.onerror = function () {
       this.src = "res/weather.webp";
     };
@@ -743,7 +744,8 @@ async function getForecastWeather(city, tempUnit, weatherAPIKEY, shouldUpdate) {
       const day = forecastday[i];
       const forecastIcon = document.getElementById(`weather-icon${i + 1}`);
 
-      forecastIcon.src = `https://${day.day.condition.icon}`;
+      const iconUrl = day.day.condition.icon;
+      forecastIcon.src = iconUrl.startsWith("http") ? iconUrl : `https:${iconUrl}`;
       forecastIcon.onerror = function () {
         this.src = "res/weather.webp";
       };
