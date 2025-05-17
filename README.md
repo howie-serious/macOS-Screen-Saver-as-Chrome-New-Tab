@@ -53,7 +53,7 @@ Now, you can enjoy videos from the Apple video source.
 
 By selecting the Apple Server as the video source and enabling the reverse proxy option, you will use the built-in reverse proxy to fetch videos from Apple indirectly.
 
-This is juet for temporary convenience, it is not recommended to use the built-in reverse proxy for an extended period as it is only a temporary solution.
+This is just for temporary convenience, it is not recommended to use the built-in reverse proxy for an extended period as it is only a temporary solution.
 
 I cannot guarantee the long-term availability of this built-in reverse proxy.
 
